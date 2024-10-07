@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+  
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <title>FAD's Portfolio</title>
+    <link rel="preload" href="css/all.min.css" as="style"/>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/montserrat.css" />
+    <link rel="preload" href="css/homepage.css" as="style"/>
+    <link rel="stylesheet" href="css/homepage.css" />
+    <link href="css/material.css" rel="stylesheet" />
+    <link href="css/fabAndChat.css" rel="stylesheet" />
+    <link href="css/emoji-mart.css" rel="stylesheet" />
+    <link href="css/cropper.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/material.css" rel="stylesheet">
+    <link rel="preload" href="css/jquery-ui.css" as="style"/>
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/gridstyle.css" />
+    <link rel="stylesheet" href="css/lc_lightbox.css" />
+    <link rel="stylesheet" href="css/slicebox.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="preload" href="fonts/material-icon/css/material-design-iconic-font.min.css" as="style"/>
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css" />
+    <link rel="stylesheet" href="skins/minimal.css" />
+    <link href="css/video-js.css" rel="preload"  as="style"/>
+    <link rel="stylesheet" href="css/video-js.css" />
+    <link rel="preload" href="skins/dark.css" as="style"/>
+    <link rel="stylesheet" href="skins/dark.css" />
+    <link rel="stylesheet" type="text/css" href="css/room_default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component_one.css" />
+    <link
+      rel="preload"
+      href="css/material-design-iconic-font.min.css"
+     as="style"/>
+     <link href="css/material-design-iconic-font.min.css" rel="stylesheet"/>
+      <link
+      rel="preload"
+      href="css/app.css"
+     as="style"/>
+    <link href="css/app.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="homemain">
+      <div class="bar">
+        
+       
+          <nav class="navbar navbar-expand navbar-dark navbar-bg">
+  
+            <div class="navbar-collapse collapse">
+              <ul class="navbar-nav navbar-align">
+                <li class="nav-item dropdown" id="adminli" style="display: none; color:whitesmoke !important;" >
+                  <a class="nav-icon dropdown-toggle" href="javascript:void(0);" id="adminDropdown" data-bs-toggle="dropdown">
+                    <div class="position-relative">
+                      <i class="align-middle" data-feather="server"></i>
+                     
+                    </div>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="alertsDropdown" style="display: none !important;"></div>
+                </li>
+                
+                <li class="nav-item dropdown" id="msgli" style="display: none; color:whitesmoke !important;">
+                  <a
+                    class="nav-icon dropdown-toggle"
+                    href="javascript:void(0)"
+                    id="messagesDropdown"
+                    data-bs-toggle="dropdown"
+                  >
+                    <div class="position-relative">
+                      <i class="align-middle" data-feather="message-square"></i>
+                      <span class="indicator" id="mcount"></span>
+                    </div>
+                  </a>
+                  <div
+                    class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0"
+                    aria-labelledby="messagesDropdown"
+                   id="mespanel" style="display: none;">
+                    <div class="dropdown-menu-header">
+                      <div class="position-relative">
+                        <span id="mcount-two"></span>
+                      </div>
+                    </div>
+                    <div class="list-group" id="nmsgcon"></div>
+                    <div class="dropdown-menu-footer">
+                      <a href="javascript:void(0);" class="text-muted" id="revealAnchor">Show all messages</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-icon dropdown-toggle d-inline-block d-sm-none"
+                    href="javascript:void(0)"
+                    data-bs-toggle="dropdown"
+                  >
+                    <i class="align-middle" data-feather="settings"></i>
+                  </a>
+  
+                  <a
+                    class="nav-link dropdown-toggle d-none d-sm-inline-block"
+                    href="javascript:void(0)"
+                    data-bs-toggle="dropdown"
+                  >
+                    <img
+                      src="images/icontexto-user-web20-myspace.ico"
+                      class="avatar img-fluid rounded me-1"
+                      alt="Profile Picture"
+                      id="pp"
+                    />
+                    <span class="text-light" id="pn"></span>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-end">
+                   
+                    <a class="dropdown-item" href="javascript:void(0);" id="regbutton"
+                    style="display: none;"><i class="align-middle me-1" data-feather="log-in" ></i>
+                    Sign In</a
+                  >
+                   
+                   
+                    <a class="dropdown-item" href="javascript:void(0);" id="logbutton" style="display: none;">
+                      <i class="align-middle me-1" data-feather="log-out" ></i>
+                      Log out</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+      </div>
+      <div class="leftdiv">
+        <div class="profilediv">
+            <div class="logo-img"><div class="circle"></div></div>
+            <div class="img-area">
+                <div class="inner-area">
+                  <img src="../pages/images/jaclyn-moy-BLZqzDZ02lI-unsplash.jpg" alt="" id="portImg">
+                </div>
+              </div>
+
+              <div class="name">Frankie Appiah-Dankwa</div>
+              <div class="about" id="about-div"></div>
+              <div class="about cvlink" id="cred-dev"> <i class="fas fa-graduation-cap"></i> About Me</div>
+        </div>
+        <div class="social-media-handles">
+            <div class="sm-icons"><img src="../pages/images/fb.png" /><span id="fb-span"></span></div>
+            <div class="sm-icons"><img src="../pages/images/ig.png" /><span id="ig-span"></span></div>
+            <div class="sm-icons"><img src="../pages/images/youtube.png" /><span id="yt-span"></span></div>
+            <div class="sm-icons"><img src="../pages/images/gmail.png" /><span id="gm-span"></span></div>
+            <div class="sm-icons"><img src="../pages/images/whatsapp.png" /><span id="wp-span"></span></div>
+            <div class="sm-icons"><img src="../pages/images/phone.png" /><span id="ph-span"></span></div>
+        </div>
+      </div>
+      <div class="rightdiv">
+        <div class="tabsheader">
+            <ul>
+                <li class="tab tabSelected "><a href="javascript:void(0);" class="currentTab"><img src="../pages/images/pencil.png" class="tabimg"> Works</a></li>
+                    <li class="tab tabSelected"><a href="javascript:void(0);"><img src="../pages/images/ps.png" class="tabimg"> Works</a></li>
+                    <li class="tab tabSelected"><a href="javascript:void(0);"><img src="../pages/images/ae.png" class="tabimg"> Works</a></li>
+                    <li class="tab tabSelected"><a href="javascript:void(0);"><img src="../pages/images/cube.png" class="tabimg"> Works</a></li>
+                <li class="tab tabSelected"><a href="javascript:void(0);"><img src="../pages/images/video.png" class="tabimg nm2"></a></li>
+            </ul>
+        </div>
+        <div class="tabsbody" id="tabBody">
+            <div class="workscontainer fcon" id="pencil-works">
+             <div id="pencil-works-child" class="workcon-child"></div>   
+            </div>
+            <div class="workscontainer" id="ps-works" style="display: none;">
+                <div id="ps-works-child" class="workcon-child"></div> 
+            </div>
+            <div class="workscontainer b-b" id="ae-works"  style="display: none;">
+                <div id="ae-works-child" class="workcon-child wc-child">
+                    <div class="videoplayer-div">
+
+                        <div  class="vid-extras header-bg" id="header-div" style="display: none;">
+                            <div class="header-firstrow">
+                                <i>Now Playing : </i>
+                                <i class="fas fa-pause mpausebtn" id="pause-marquee-btn" onclick="toggleIconClass('pause-marquee-btn')"></i>
+                            </div>
+                            <div class="marqdiv">
+                                <ul id="title-marquee"><li id="header-span"></li></ul>
+                            </div>
+                            </div>
+
+                        <div class="main-content">
+                         
+                            <div class="main-video-div" id="mvd">
+
+                              <video
+                                id="my-player"
+                                class="video-js"
+                                controls
+                                preload="auto"
+                                muted = "true"
+                                poster=""
+                                data-setup='{"techOrder": ["html5","youtube"]}'>
+                            <source src="images/logo revealing.mp4" type="video/mp4"/>
+                            <p class="vjs-no-js">
+                                To view this video please enable JavaScript, and consider upgrading to a
+                                web browser that
+                                <a href="https://videojs.com/html5-video-support/" target="_blank">
+                                supports HTML5 video
+                                </a>
+                            </p>
+                            </video>
+                            <iframe id="my-player-video-iframe"  class="videoiframe" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  src="" style="display: none;"></iframe>
+                            </div> 
+                           <div class="comandlikes" id="cal">
+                            
+                           </div>  
+                        </div>
+                        <div id="desc-div" class="vid-extras" style="display: none;"></div>
+                    </div>
+                    <div class="playlist-div" id="ae-list">
+                   
+                     
+                    </div>
+                    <div class="playlist-div extra-div" id="ae-com-div" style="display: none;">
+                        <div class="videocomments">
+                            <div class="vc-comments" id="main-ae-comments">
+                               
+                            </div>
+                            
+                        </div>
+                        <form action="javascript:void(0)" id="aeform">
+                        <div class="videocombox">
+                            
+          
+                                
+                                <textarea id="aecominput"  placeholder="Type your comment here" class="txtinput" required></textarea>
+                               <div class="i-con"><i class="fas fa-laugh-beam emoclass" id="ae-comment-emoji-icon"></i>
+                                <i class="fas fa-paper-plane" id="ae-sendCommentButton"></i></div>
+                                
+                                <button id="closeaecombtn" class="nclosebtn">X</button>
+                                <div id="emoji-picker-ae" class="com-em-picker" style="display:none"></div>
+                           
+
+                        </div>
+                    </form> 
+                    </div>
+                </div> 
+            </div>
+            <div class="workscontainer" id="3d-works"  style="display: none;">
+                <div id="3d-works-child" class="workcon-child threed-img">
+
+                    
+                </div> 
+            </div>
+            <div class="workscontainer b-b" id="vid-works" style="display: none;">
+                <div id="vid-works-child" class="workcon-child wc-child">
+                    <div class="videoplayer-div">
+
+                        <div  class="vid-extras header-bg" id="header-div-two" style="display: none;">
+                            <div class="header-firstrow">
+                                <i>Now Playing : </i>
+                                <i class="fas fa-pause mpausebtn" id="pause-marquee-btn-two" onclick="toggleIconClass('pause-marquee-btn-two')"></i>
+                            </div>
+                            <div class="marqdiv">
+                                <ul id="title-marquee-two"><li id="header-span-two"></li></ul>
+                            </div>
+                            </div>
+
+                        <div class="main-content">
+                         
+                            <div class="main-video-div" id="mvd-two">
+
+                              <video
+                                id="my-player-two"
+                                class="video-js"
+                                controls
+                                preload="auto"
+                                muted = "true"
+                                poster=""
+                                data-setup='{"techOrder": ["html5","youtube"]}'>
+                            <source src="images/logo revealing.mp4" type="video/mp4"></source>
+                            <p class="vjs-no-js">
+                                To view this video please enable JavaScript, and consider upgrading to a
+                                web browser that
+                                <a href="https://videojs.com/html5-video-support/" target="_blank">
+                                supports HTML5 video
+                                </a>
+                            </p>
+                            </video>
+                            <iframe id="my-player-two-video-iframe"  class="videoiframe" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  src="" style="display: none;"></iframe>
+                            </div> 
+                           <div class="comandlikes" id="cal-two">
+                           
+                           </div>  
+                        </div>
+                        <div id="desc-div-two" class="vid-extras" style="display: none;"></div>
+                    </div>
+                    <div class="playlist-div" id="vid-list"></div>
+                        <div class="playlist-div extra-div" id="vid-com-div" style="display: none;">
+                        <div class="videocomments">
+                            <div class="vc-comments" id="main-vid-comments">
+                               
+                            </div>
+                            
+                        </div>
+                        <form action="javascript:void(0)" id="vidform">
+                        <div class="videocombox">
+                            
+          
+                                
+                                <textarea id="vidcominput"  placeholder="Type your comment here" class="txtinput" required></textarea>
+                               <div class="i-con"><i class="fas fa-laugh-beam emoclass " id="vid-comment-emoji-icon"></i>
+                                <i class="fas fa-paper-plane" id="vid-sendCommentButton"></i></div>
+                                
+                                <button id="closevidcombtn" class="nclosebtn">X</button>
+                                <div id="emoji-picker-vid" class="com-em-picker" style="display:none"></div>
+                           
+
+                        </div>
+                    </form>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="padDiv"></div>
+    </div>
+
+
+    <div id="comments-div"  class="modalDialog" style="display: none;">
+        <div class="close" id="comBtnClose">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <svg viewBox="0 0 36 36" class="circle">
+              <path
+                stroke-dasharray="100, 100"
+                d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+          </div>
+     <div class="commentsMain">
+      <div class="cmLeft">
+        <img src="../pages/images/210950.jpg" id="focusedImage" />
+      </div>
+      <div class="cmRight" id="cmR">
+        <div class="cmComments" id="imgComments">
+          
+        </div>
+        <div class="cmPanel">
+
+          <form action="javascript:void(0)" id="comform">
+          
+                <i class="fas fa-laugh-beam emoclass" id="comment-emoji-icon"></i>
+                <textarea id="cominput"  placeholder="Type your comment here"></textarea>
+               
+                
+                  <i class="fas fa-paper-plane" id="sendCommentButton"></i>
+                
+                <div id="emoji-picker-com" class="com-em-picker" style="display:none" ></div>
+            </form>
+        </div>
+      </div>
+     </div>
+    </div>
+
+
+
+   <div class="mainwallcon"  style="display: none;" id="wc">
+    <div class="wallcontainer">	
+           <div class="closegallery" id="cg"><i class="fas fa-door-closed"></i></div>                      
+        <div id="gr-gallery" class="gr-gallery">
+            <div class="gr-main" id="gr-main">
+                
+              
+             
+               
+                
+            </div>
+        </div>
+    </div>
+   </div>
+   
+ <div class="slicediv" id="slicediv" style="display: none;">
+    <div class="slicecontainer">
+        <div class="close" id="sliceBtnClose">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <svg viewBox="0 0 36 36" class="circle">
+              <path
+                stroke-dasharray="100, 100"
+                d="M18 2.0845
+                  a 15.9155 15.9155 0 0 1 0 31.831
+                  a 15.9155 15.9155 0 0 1 0 -31.831"
+              />
+            </svg>
+          </div>
+        <div class="wrapper">
+      
+          <ul id="sb-slider" class="sb-slider">
+         
+          
+          </ul>
+      
+          <div id="shadow" class="shadow"></div>
+          
+          <div id="nav-arrows" class="nav-arrows">
+            <a href="javascript:void(0)">Next</a>
+            <a href="javascript:void(0)">Previous</a>
+          </div>
+          
+        </div>
+      </div>
+ </div>
+  
+ <div class="authDiv" id="authDiv" style="display: none;">
+    <div class="close" id="authBtnClose">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <svg viewBox="0 0 36 36" class="circle">
+          <path
+            stroke-dasharray="100, 100"
+            d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+          />
+        </svg>
+      </div>
+    <div class="anim-div">
+        <img src="images/alexander-wang-KjyrxSHwqTg-unsplash.webp" class="formwrapper-img"/>
+    </div>
+   
+    <div class="formwrapper">
+        <div class="title-text">
+          <div class="title login"><div class="form-logo"></div></div>
+          <div class="title signup"><div class="form-logo"></div></div>
+        </div>
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slide" id="login"  checked>
+            <input type="radio" name="slide" id="signup" >
+            <label for="login" class="slide login" id="logformbtn">Login</label>
+            <label for="signup" class="slide signup" id="regformbtn">Signup</label>
+            <div class="slider-tab"></div>
+          </div>
+          <div class="form-inner">
+            <form action="javascript:void(0);"   enctype="multipart/form-data" autocomplete="off"
+        class="login" id="logform">
+              <div class="field">
+                <input type="email" placeholder="Email Address" required id="login-email" name="login-email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" required id="login-password" name="login-password">
+              </div>
+              <div class="pass-link"><a href="javascript:void(0);">Forgot password?</a></div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Login">
+              </div>
+              <div class="signup-link">Not having an account? <a href="javascript:void(0);">Signup now</a></div>
+            </form>
+            <form action="javascript:void(0);" class="signup" id="regform" autocomplete="off"
+            enctype="multipart/form-data">
+                <div class="fields-con">
+                    <div class="field">
+                        <input type="text" placeholder="First Name" name="sfname" id="sfname" required>
+                      </div>
+                      <div class="field">
+                        <input type="text" placeholder="Last Name" name="slname" id="slname" required>
+                      </div>
+                    <div class="field">
+                        <input type="email" placeholder="Email Address" name="semail" id="semail" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                      </div>
+                      <div class="field">
+                        <input type="password" placeholder="Password" name="spass" id="spass" required>
+                      </div>
+                     
+                      <div class="field">
+                        <input type="password" placeholder="Pin" name="spin" id="spin" minlength="4" maxlength="4" required oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                      </div>
+                      <div class="field">
+                        <input type="number" placeholder="Contact" name="scontact" id="scontact" oninput="this.value = this.value.replace(/[^0-9]/g, '');" required>
+                      </div>
+                      <div class="avatarlabel">Avatar</div>
+                      <div class="avatar-container">
+                        <label class="avatar-option">
+                            <input type="radio" name="avatar" value="avatar1.png">
+                            <img src="images/avatars/avatar-1.png" alt="Avatar 1">
+                        </label>
+            
+                        <label class="avatar-option">
+                            <input type="radio" name="avatar" value="avatar2.png">
+                            <img src="images/avatars/avatar-2.png" alt="Avatar 2">
+                        </label>
+            
+                        <label class="avatar-option">
+                            <input type="radio" name="avatar" value="avatar3.png">
+                            <img src="images/avatars/avatar-3.png" alt="Avatar 3">
+                        </label>
+                        <label class="avatar-option">
+                            <input type="radio" name="avatar" value="avatar4.png">
+                            <img src="images/avatars/avatar-4.png" alt="Avatar 4">
+                        </label>
+            
+                        <label class="avatar-option">
+                            <input type="radio" name="avatar" value="avatar5.png">
+                            <img src="images/avatars/avatar-5.png" alt="Avatar 5">
+                        </label>
+            
+                        <label class="avatar-option">
+                            <input type="radio" name="avatar" value="avatar6.png">
+                            <img src="images/avatars/avatar-6.png" alt="Avatar 6">
+                        </label>
+                        <label class="avatar-option">
+                            <input type="radio" name="avatar" value="avatar1.png">
+                            <img src="images/avatars/avatar-7.png" alt="Avatar 7">
+                        </label>
+            
+                        <label class="avatar-option">
+                            <input type="radio" name="avatar" value="avatar8.png">
+                            <img src="images/avatars/avatar-8.png" alt="Avatar 8">
+                        </label>
+            
+                        <label class="avatar-option">
+                            <input type="radio" name="avatar" value="avatar9.png">
+                            <img src="images/avatars/avatar-9.png" alt="Avatar 9">
+                        </label>
+                    </div>
+                    <div class="form-group" align="center">
+                        <div class="form-input" style="width: 100%;">
+                          <div  >
+                            <div class="profimg" id="avatarImg" style="display: none;">
+                              <img id="file-ip-1-preview" src="" style="height:100%; width:100%; border-radius: 10px; ">
+                            </div>
+                            <label for="file-ip-1">Add Avatar</label>
+                            <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+
+                            </div>
+                          </div>
+        
+                    </div>
+                </div>
+             
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Signup">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  
+ </div>
+    
+ <div class="authDiv" id="resetDiv" style="display: none;">
+    <div class="close" id="resetBtnClose">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <svg viewBox="0 0 36 36" class="circle">
+          <path
+            stroke-dasharray="100, 100"
+            d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+          />
+        </svg>
+      </div>
+   
+
+    <div class="anim-div">
+        <img src="images/alexander-wang-KjyrxSHwqTg-unsplash.webp" class="formwrapper-img"/>
+    </div>
+   
+    <div class="formwrapper">
+        <div class="title-text" id="tt">
+          <div class="title login"><div class="form-logo"></div></div>
+          <div class="title signup"><div class="form-logo"></div></div>
+        </div>
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slidetwo" id="resetpassword"  checked>
+            <input type="radio" name="slidetwo" id="resetpin" >
+            <label for="resetpassword" class="slide login" id="passformbtn">Password</label>
+            <label for="resetpin" class="slide signup" id="pinformbtn">Pin</label>
+            <div class="slider-tab"></div>
+          </div>
+          <div class="form-inner">
+            <form action="javascript:void(0);"  enctype="multipart/form-data" autocomplete="off"
+        class="login" id="passform">
+                <div class="field fh">
+                    <div class="form-group">
+                        <label for="email" class="label"
+                          ><i class="zmdi zmdi-email"></i
+                        ></label>
+                        <input
+                          type="email"
+                          name="upassemail"
+                          id="upassemail"
+                          class="forminput"
+                          placeholder="Email address"
+                          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                          required
+                        />
+                      </div>
+                  </div>
+                  <div class="field fh">
+                    <div class="form-group">
+                        <label for="sid" class="label"
+                          ><i class="zmdi zmdi-account material-icons-name"></i
+                        ></label>
+                        <input
+                          type="text"
+                          name="upassid"
+                          id="upassid"
+                          placeholder="User ID"
+                          class="forminput"
+                          required
+                        />
+                      </div>
+                  </div>
+                  <div class="field fh">
+                    <div class="form-group">
+                        <label for="upass" class="label"
+                          ><i class="zmdi zmdi-lock"></i
+                        ></label>
+                        <input
+                          type="password"
+                          name="upass"
+                          id="upass"
+                          class="forminput"
+                          placeholder="Password"
+                          minlength="5"
+                          required
+                        />
+                      </div>
+                  </div>
+                  <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="Reset Password">
+                  </div>
+            </form>
+            <form action="javascript:void(0);"   enctype="multipart/form-data" autocomplete="off"
+        class="signup" id="pinform">
+                <div class="field fh">
+                    <div class="form-group">
+                        <label for="email" class="label"
+                          ><i class="zmdi zmdi-email"></i
+                        ></label>
+                        <input
+                          type="email"
+                          name="upinemail"
+                          id="upinemail"
+                          class="forminput"
+                          placeholder="Email address"
+                          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                          required
+                        />
+                      </div>
+                  </div>
+                  <div class="field fh">
+                    <div class="form-group">
+                        <label for="sid" class="label"
+                          ><i class="zmdi zmdi-account material-icons-name"></i
+                        ></label>
+                        <input
+                          type="text"
+                          name="upinid"
+                          id="upinid"
+                          placeholder="User ID"
+                          class="forminput"
+                          required
+                        />
+                      </div>
+                  </div>
+                  <div class="field fh">
+                    <div class="form-group">
+                        <label for="upass" class="label"
+                          ><i class="zmdi zmdi-lock"></i
+                        ></label>
+                        <input
+                          type="password"
+                          name="upin"
+                          id="upin"
+                          class="forminput"
+                          placeholder="Pin"
+                          minlength="4"
+                          maxlength="4"
+                          required
+                        />
+                      </div>
+                  </div>
+             
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Reset Pin">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  
+ </div>
+
+
+ <div class="authDiv" id="pdfDiv" style="display: none;">
+    <div class="close" id="pdfBtnClose">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <svg viewBox="0 0 36 36" class="circle">
+          <path
+            stroke-dasharray="100, 100"
+            d="M18 2.0845
+              a 15.9155 15.9155 0 0 1 0 31.831
+              a 15.9155 15.9155 0 0 1 0 -31.831"
+          />
+        </svg>
+      </div>
+      <div class="anim-div-two">
+        <img src="images/alexander-wang-KjyrxSHwqTg-unsplash.webp" class="formwrapper-img"/>
+    </div>
+      <div class="iframe-con">
+      <iframe src=""  id="pdf-iframe" width="100%" height="100%"></iframe>
+    </div>
+      </div>
+
+
+
+
+      <div class="imgFull" id="fullimg" style="display: none">
+        <div class="picMain">
+          <div class="picHeader">
+            <div class="downloadbtn" id="picDownloadBtn" title="download"><i class="fas fa-download"></i></div>
+            <div class="downloadbtn" id="simBtn" title="show in message"><i class="fas fa-tag"></i></div>
+            <div class="downloadbtn" id="replyBtn" title="reply to message"><i class="fas fa-reply"></i></div>
+            <div class="closebtn" id="closeSliderBtn" title="close"><i class="fas fa-window-close"></i></div>
+          </div>
+          <div class="picBody">
+            <div class="slidecontainer">
+              <div id="my-slider" class="crs-wrap">
+                <div class="crs-screen">
+                  <div class="crs-screen-roll" id="slidescreen"></div>
+                </div>
+                <div class="crs-bar" id="crsbar">
+                  <div class="crs-bar-roll-current"></div>
+                  <div class="crs-bar-roll-wrap">
+                    <div class="crs-bar-roll" id="slidethumbnail">
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="msg-center" id="mc" style="display: none;">
+        <div class="contacts" id="allchatsdiv"></div>
+        <div class="contacts bg-con" id="allchatsdivcover"></div>
+        <div class="overlay" style="display: none;"></div>
+        <div class="chat" id="mainchat">
+          <div class="backdiv" id="nav-back">
+            <a href="javascript:void(0);" class="a">
+              <span class="left"></span>
+            </a>
+          </div>
+          <div class="chatcover" id="cover-two"></div>
+          <div class="chatcover coverlay" id="cover">
+            <div class="logoimg">
+              <div class="pinheader">Enter pin to continue</div>
+
+             <div class="pin-input-container">
+              <input class="pinInput" type="password" maxlength="1" oninput="handleInput(0, this)">
+              <input class="pinInput" type="password" maxlength="1" oninput="handleInput(1, this)">
+              <input class="pinInput" type="password" maxlength="1" oninput="handleInput(2, this)">
+              <input class="pinInput" type="password" maxlength="1" oninput="handleInput(3, this)">
+             </div>
+
+             <div class="pinmessage" id="pinmess"></div>
+            </div>
+            
+          </div>
+
+          <div class="chatoverlay" id="cameraDiv" style="display: none;">
+            <div class="picHeader">Capture a photo</div>
+            <div class="picSource">
+              <video id="video-preview"  autoplay></video>
+              <canvas id="canvas-preview"></canvas>
+            </div>
+            
+            <div class="picFooter">
+              <button  class="recbtn pausebtn" id="capture-btn"><i class="fas fa-camera"></i></button>
+              <button  class="recbtn pausebtn" id="crop-btn" disabled><i class="fas fa-crop"></i></button>
+              <button class="recbtn pausebtn" id="done-btn" disabled><i class="fas fa-check"></i></button>
+              <button class="recbtn pausebtn" id="refresh-btn" disabled><i class="fas fa-eraser"></i></button>
+              <button  class="recbtn stopbtn" id="cancel-btn"><i class="fas fa-power-off"></i></button>
+              
+
+            </div>
+            
+          </div>
+
+
+          <div class="contact bar">
+            <div class="mpic" id="mpic"></div>
+            <div class="name" id="mname"></div>
+            <div class="seen" id="onstat"></div>
+          </div>
+          <div class="messagesbg"></div>
+          <div class="messages" id="chat"></div>
+          <div class="filemessages" id="sfilesdiv">
+            <div class="fmHeader">
+              <div class="upfilename" id="filenametitle"></div>
+              <div class="closebtn" id="closeFileDivBtn" title="close"><i class="fas fa-window-close"></i></div>
+            </div>
+            <div class="fmBody">
+              <div class="picSource fmBodyMain">
+                <div class="fileOutput">
+                  <div class="fileOutput-maincontent" id="fmaincontent"></div>
+                  <div class="fileOutput-Desc" id="fdesc"></div>
+                </div>  
+
+
+                <div id="emoji-picker-two" class="em-picker-two"></div>
+              </div>
+
+
+              <div class="textarea-container">
+                <textarea id="textbox" rows="1" class="txtarea" placeholder="Enter optional comment here"></textarea>
+                <span class="txticon"><i class="far fa-laugh-beam" id="second-emoji-icon"></i
+                  ></span>
+              </div>
+              <div class="filethumbnails" id="fthumb">
+                
+              </div>
+            </div>
+          </div>
+          <div class="reply-section" id="rs">
+            <div id="msg-area" class="rep-area">
+              <span id="userSpan"></span>
+              <div id="userDiv"></div>
+              <div id="userMedia"></div>
+            </div>
+            <div class="close-area" id="ca">
+              <span class="close-icon">x</span>
+            </div>
+          </div>
+          <div class="record-section" id="recs" style="display: none;">
+            <div class="record-child">
+                <button id="pauseButton" class="recbtn pausebtn"><i class="fas fa-pause"></i></button>
+                <button id="playButton" class="recbtn resumebtn"><i class="fas fa-play"></i></button>
+                <button id="cancelButton" class="recbtn stopbtn"><i class="fas fa-power-off"></i></button>
+                <button id="stopButton" class="recbtn stopbtn"><i class="fas fa-stop"></i></button>
+                <div id="duration"> 0:00</div>
+            </div>
+          </div>
+          <div class="input" id="cinput">
+            <div class="menucon" id="mcon">
+              <i class="fas fa-camera" id="cambtn"></i> 
+              <i class="fas fa-image" id="picturebtn"></i>
+              <i class="fas fa-music" id="musicbtn"></i>
+              <i class="fas fa-video" id="vidbtn"></i>
+              <i class="fas fa-file-alt" id="filebtn"></i>
+              
+            </div>
+            <i class="fas fa-paperclip" id="mconbtn"></i
+            ><i class="far fa-laugh-beam" id="emoji-icon"></i>
+            <textarea id="msginput" rows="1"  placeholder="Type your message here!"></textarea>
+            <input type="hidden" id="activeIndex">
+            <div class="tdiv">
+              <i class="fas fa-microphone" id="recordButton"></i>
+              <i class="fas fa-paper-plane" id="uploadMediaButton"></i>
+              <i class="fas fa-paper-plane" id="sendMessageButton"></i>
+            </div>
+            
+            <div id="emoji-picker" class="em-picker"></div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="inMenu" id="cusmenu" style="display: none">
+        <ul class="menuItems">
+          <li><i class="fas fa-reply"></i> &nbsp; Reply</li>
+          <li><i class="fas fa-download"></i> &nbsp; Download</li>
+        </ul>
+      </div>
+
+
+
+
+     <script src="js/modernizr.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="preload" href="js/jquery-ui.min.js" as="script">
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/slider.js"></script>
+     <link rel="preload" href="js/db.js" as="script">
+    <script src="js/db.js"></script>
+    <script>
+        function loadScript(scriptName) {
+    return new Promise((resolve, reject) => {
+        const scriptElement = document.createElement("script");
+        scriptElement.src = scriptName;
+        scriptElement.onload = resolve;
+        scriptElement.onerror = reject;
+        document.body.appendChild(scriptElement);
+    });
+}
+        window.addEventListener("load", function() {
+          
+          loadScript("js/loggedin.js")
+    .then(() => loadScript("js/sse.js") .then(() => loadScript("js/control.js")))
+    .catch(error => console.error("Script loading error:", error));
+        });
+      </script>
+    <script  src="js/moment.min.js"></script>   
+    <script  src="js/axios.min.js"></script> 
+    <link rel="preload" href="js/emoji-browser.js" as="script">
+    <script src="js/emoji-browser.js"></script>
+    <script src="js/snackbar.min.js" ></script>
+    <script src="js/snackbar.js" ></script>
+    <script src="js/spin.min.js" ></script>
+    <script src="js/acmeticker.js"></script>
+    <link rel="preload" href="js/app.js" as="script">
+    <script src="js/app.js"></script>
+    <link rel="preload" href="js/video.min.js" as="script">
+    <script src="js/video.min.js"></script>
+    <link rel="preload" href="js/Youtube.min.js" as="script">
+    <script src="js/Youtube.min.js"></script>
+    <script src="js/freewall.js"></script>
+    <script  src="js/gridscript.js"></script> 
+    <script src="js/wallgallery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.js"></script>
+    <script src="js/lc_lightbox.lite.js" type="text/javascript"></script>
+    <script src="lib/AlloyFinger/alloy_finger.min.js" type="text/javascript"></script>
+    <script src="js/jquery.slicebox.js"></script>
+    <script  src="js/slice.js"></script>
+    <script src="js/homepage-script.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/authentication.js"></script>
+    <script src="js/chatfunc.js" ></script>
+  </body>
+</html>

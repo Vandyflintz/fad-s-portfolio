@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAD's Portfolio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/montserrat.css" />
+    <link href="css/material.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/dashboard.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/montserrat.css" />
+    <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="stylesheet" href="skins/minimal.css" />
+    <link href="css/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/macaw-elegant-tabs.css" type="text/css" media="all" />
+    <link href="css/material.css" rel="stylesheet" />
+    <link href="css/specDesign.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link
+    rel="stylesheet"
+    href="css/material-design-iconic-font.min.css"
+  />
+  <link href="css/app.css" rel="stylesheet" />
+  <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="javascript:void(0)">
+          <span class="align-middle">FAD's Portfolio</span>
+        </a>
+
+				<ul class="sidebar-nav">
+				
+
+					<li class="sidebar-item active" id="accountli">
+						<a class="sidebar-link" href="javascript:void(0);">
+              <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Account</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item" id="profileli">
+						<a class="sidebar-link" href="javascript:void(0);">
+              <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item" id="datali">
+						<a class="sidebar-link" href="javascript:void(0);">
+              <i class="align-middle" data-feather="database"></i> <span class="align-middle">Data Center</span>
+            </a>
+					</li>
+
+                    <li class="sidebar-item" id="usersli">
+						<a class="sidebar-link" href="javascript:void(0);">
+              <i class="align-middle" data-feather="users"></i> <span class="align-middle">Users</span>
+            </a>
+					</li>
+
+				</ul>
+
+				
+			</div>
+		</nav>
+
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle js-sidebar-toggle">
+          <i class="hamburger align-self-center"></i>
+        </a>
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="javascript:void(0);" id="publicPageDropdown" data-bs-toggle="dropdown">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="globe"></i>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="messagesDropdown" style="display: none;">
+								
+								
+							</div>
+						</li>
+					
+					</ul>
+				</div>
+			</nav>
+
+			<main class="content">
+            <div id="account-div" class="mothercon">
+
+                <div class="macaw-tabs macaw-elegant-tabs" id="accountTab">
+                    <div role="tablist" aria-label="Resources">
+                      <button role="tab" aria-selected="true" aria-controls="blog-tab" id="blog"><i class="fas fa-user-plus"></i> <span class="label">New Account</span></button>
+                      <button role="tab" aria-selected="false" aria-controls="events-tab" id="events" tabindex="-1"><span class="material-icons icon">people</span> <span class="label">Acounts</span></button>
+                    </div>
+          
+                    <div tabindex="0" role="tabpanel" aria-labelledby="blog" id="blog-tab" class="formtab">
+                        <div class="formwrapper">
+                            <div class="title-text">
+                              <div class="title login"><div class="form-logo"></div></div>
+                            </div>
+                            <div class="form-container">
+                             
+                              <div class="form-inner">
+                            
+                                <form action="javascript:void(0);" class="signup" id="regform" autocomplete="off"
+                                enctype="multipart/form-data">
+                                    <div class="fields-con">
+                                        <div class="field">
+                                            <input type="text" placeholder="First Name" name="sfname" id="sfname" required>
+                                          </div>
+                                          <div class="field">
+                                            <input type="text" placeholder="Last Name" name="slname" id="slname" required>
+                                          </div>
+                                        <div class="field">
+                                            <input type="email" placeholder="Email Address" name="semail" id="semail" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                                          </div>
+                                          <div class="field">
+                                            <input type="password" placeholder="Password" name="spass" id="spass" required>
+                                          </div>
+                                         
+                                          <div class="field">
+                                            <input type="password" placeholder="Pin" name="spin" id="spin" minlength="4" maxlength="4" required oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+                                          </div>
+                                         
+                                          <div class="avatarlabel">Avatar</div>
+                                          <div class="avatar-container">
+                                            <label class="avatar-option">
+                                                <input type="radio" name="avatar" value="avatar1.png">
+                                                <img src="images/avatars/avatar-1.png" alt="Avatar 1">
+                                            </label>
+                                
+                                            <label class="avatar-option">
+                                                <input type="radio" name="avatar" value="avatar2.png">
+                                                <img src="images/avatars/avatar-2.png" alt="Avatar 2">
+                                            </label>
+                                
+                                            <label class="avatar-option">
+                                                <input type="radio" name="avatar" value="avatar3.png">
+                                                <img src="images/avatars/avatar-3.png" alt="Avatar 3">
+                                            </label>
+                                            <label class="avatar-option">
+                                                <input type="radio" name="avatar" value="avatar4.png">
+                                                <img src="images/avatars/avatar-4.png" alt="Avatar 4">
+                                            </label>
+                                
+                                            <label class="avatar-option">
+                                                <input type="radio" name="avatar" value="avatar5.png">
+                                                <img src="images/avatars/avatar-5.png" alt="Avatar 5">
+                                            </label>
+                                
+                                            <label class="avatar-option">
+                                                <input type="radio" name="avatar" value="avatar6.png">
+                                                <img src="images/avatars/avatar-6.png" alt="Avatar 6">
+                                            </label>
+                                            <label class="avatar-option">
+                                                <input type="radio" name="avatar" value="avatar1.png">
+                                                <img src="images/avatars/avatar-7.png" alt="Avatar 7">
+                                            </label>
+                                
+                                            <label class="avatar-option">
+                                                <input type="radio" name="avatar" value="avatar8.png">
+                                                <img src="images/avatars/avatar-8.png" alt="Avatar 8">
+                                            </label>
+                                
+                                            <label class="avatar-option">
+                                                <input type="radio" name="avatar" value="avatar9.png">
+                                                <img src="images/avatars/avatar-9.png" alt="Avatar 9">
+                                            </label>
+                                        </div>
+                                        <div class="form-group" align="center">
+                                            <div class="form-input" style="width: 100%;">
+                                              <div  >
+                                                <div class="profimg" id="avatarImg" style="display: none;">
+                                                  <img id="file-ip-1-preview" src="" style="height:100%; width:100%; border-radius: 10px; ">
+                                                </div>
+                                                <label for="file-ip-1">Add Avatar</label>
+                                                <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event, 'avatarImg');">
+                    
+                                                </div>
+                                              </div>
+                            
+                                        </div>
+                                    </div>
+                                 
+                                  <div class="field btn">
+                                    <div class="btn-layer"></div>
+                                    <input type="submit" value="Add+">
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+
+
+
+                    <div tabindex="0" role="tabpanel" aria-labelledby="events" id="events-tab" hidden>
+                        <div id="admin-cards" class="card-two">
+        
+                        </div>
+                    </div>
+                 
+                  </div>
+
+                  <div class="macaw-tabs macaw-elegant-tabs" id="profileTab" style="display: none;">
+                    <div role="tablist" aria-label="Resources">
+                      <button role="tab" aria-selected="true" aria-controls="entry-tab" id="entry"><i class="fas fa-address-card"></i> <span class="label">New Bio</span></button>
+                      <button role="tab" aria-selected="false" aria-controls="handles-tab" id="handles" tabindex="-1"> <i class="fas fa-laptop"></i> <span class="label">Handles</span></button>
+                      <button role="tab" aria-selected="false" aria-controls="bio-tab" id="bio" tabindex="-1"> <i class="fas fa-graduation-cap"></i> <span class="label">Bio</span></button>
+                      <button role="tab" aria-selected="false" aria-controls="dp-tab" id="dp" tabindex="-1"> <i class="fas fa-image"></i> <span class="label">Picture</span></button>
+                      <button role="tab" aria-selected="false" aria-controls="cv-tab" id="cv" tabindex="-1"> <i class="fas fa-file"></i> <span class="label">CV</span></button>
+                    </div>
+          
+                    <div tabindex="0" role="tabpanel" aria-labelledby="entry" id="entry-tab" class="formtab">
+                        <div class="formwrapper">
+                            <div class="title-text">
+                              <div class="title login"><div class="form-logo"></div></div>
+                            </div>
+                            <div class="form-container">
+                             
+                              <div class="form-inner">
+                            
+                                <form action="javascript:void(0);" class="signup" id="bioform" autocomplete="off"
+                                enctype="multipart/form-data">
+                                    <div class="fields-con">
+                                        <div class="field fieldmargin">
+                                            <textarea placeholder="Short description of yourself" id="txt-bio-main" required name="txt-bio-main" class="txtarea"></textarea>
+                                          
+                                          </div>
+                                          <div class="field fh">
+                                            <div class="form-group">
+                                                <label for="fbname-main" class="label"
+                                                  ><i class="zmdi zmdi-facebook-box material-icons-name"></i
+                                                ></label>
+                                                <input
+                                                  type="text"
+                                                  name="fbname-main"
+                                                  id="fbname-main"
+                                                  placeholder="Facebook Handle's Name"
+                                                  class="forminput"
+                                                  required
+                                                />
+                                              </div>
+                                          </div>
+                                          <div class="field fh">
+                                            <div class="form-group">
+                                                <label for="fblink-main" class="label"
+                                                  ><i class="zmdi zmdi-facebook-box material-icons-name"></i
+                                                ></label>
+                                                <input
+                                                  type="text"
+                                                  name="fblink-main"
+                                                  id="fblink-main"
+                                                  placeholder="Facebook Handle's Link"
+                                                  class="forminput"
+                                                  required
+                                                />
+                                              </div>
+                                          </div>
+
+                                          <div class="field fh">
+                                            <div class="form-group">
+                                                <label for="igname-main" class="label"
+                                                  ><i class="zmdi zmdi-instagram material-icons-name"></i
+                                                ></label>
+                                                <input
+                                                  type="text"
+                                                  name="igname-main"
+                                                  id="igname-main"
+                                                  placeholder="Instagram Handle's Name"
+                                                  class="forminput"
+                                                  required
+                                                />
+                                              </div>
+                                          </div>
+                                          <div class="field fh">
+                                            <div class="form-group">
+                                                <label for="iglink-main" class="label"
+                                                  ><i class="zmdi zmdi-instagram material-icons-name"></i
+                                                ></label>
+                                                <input
+                                                  type="text"
+                                                  name="iglink-main"
+                                                  id="iglink-main"
+                                                  placeholder="Instagram Handle's Link"
+                                                  class="forminput"
+                                                  required
+                                                />
+                                              </div>
+                                          </div>
+
+                                          <div class="field fh">
+                                            <div class="form-group">
+                                                <label for="ytname-main" class="label"
+                                                  ><i class="zmdi zmdi-youtube material-icons-name"></i
+                                                ></label>
+                                                <input
+                                                  type="text"
+                                                  name="ytname-main"
+                                                  id="ytname-main"
+                                                  placeholder="Youtube Handle's Name"
+                                                  class="forminput"
+                                                  required
+                                                />
+                                              </div>
+                                          </div>
+                                          <div class="field fh">
+                                            <div class="form-group">
+                                                <label for="ytlink-main" class="label"
+                                                  ><i class="zmdi zmdi-youtube material-icons-name"></i
+                                                ></label>
+                                                <input
+                                                  type="text"
+                                                  name="ytlink-main"
+                                                  id="ytlink-main"
+                                                  placeholder="Youtube Handle's Link"
+                                                  class="forminput"
+                                                  required
+                                                />
+                                              </div>
+                                          </div>
+
+
+                                          <div class="field fh">
+                                            <div class="form-group">
+                                                <label for="whatsapp-main" class="label"
+                                                  ><i class="zmdi zmdi-whatsapp material-icons-name"></i
+                                                ></label>
+                                                <input
+                                                  type="text"
+                                                  name="whatsapp-main"
+                                                  id="whatsapp-main"
+                                                  placeholder="Whatsapp Line (23354...) format"
+                                                  class="forminput"
+                                                  oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                                                  required
+                                                />
+                                              </div>
+                                          </div>
+                                          <div class="field fh">
+                                            <div class="form-group">
+                                                <label for="email-main" class="label"
+                                                  ><i class="zmdi zmdi-email material-icons-name"></i
+                                                ></label>
+                                                <input
+                                                  type="text"
+                                                  name="email-main"
+                                                  id="email-main"
+                                                  placeholder="Email Address"
+                                                  class="forminput"
+                                                  required
+                                                />
+                                              </div>
+                                          </div>
+                                          <div class="field fh">
+                                            <div class="form-group">
+                                                <label for="phone-main" class="label"
+                                                  ><i class="zmdi zmdi-smartphone-iphone material-icons-name"></i
+                                                ></label>
+                                                <input
+                                                  type="text"
+                                                  name="phone-main"
+                                                  id="phone-main"
+                                                  placeholder="Contact Number"
+                                                  class="forminput"
+                                                  required
+                                                  oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                                                />
+                                              </div>
+                                          </div>
+
+
+
+                                          <div class="form-group" align="center" style="margin-top: 20px;">
+                                            <div class="form-input" style="width: 100%;">
+                                              <div  >
+                                                <div class="profimg" id="cvPreview" style="display: none;">
+                                               
+                                                  <iframe src=""  id="main-pdf-iframe" style="height:100%; width:100%; border-radius: 10px; "></iframe>
+                                                </div>
+                                                <label for="file-ip-3">Curriculum Vitae </label>
+                                                <input type="file" id="file-ip-3" accept=".pdf" onchange="showFilePreview(event, 'main-pdf-iframe', 'cvPreview');">
+                    
+                                                </div>
+                                              </div>
+                            
+                                        </div>
+
+                                      
+                                         
+                                        
+                                        <div class="form-group" align="center" style="margin-top: 20px;">
+                                            <div class="form-input" style="width: 100%;">
+                                              <div  >
+                                                <div class="profimg" id="profImg" style="display: none;">
+                                                  <img id="file-ip-2-preview" src="" style="height:100%; width:100%; border-radius: 10px; ">
+                                                </div>
+                                                <label for="file-ip-2">Display Photo </label>
+                                                <input type="file" id="file-ip-2" accept="image/*" onchange="showPreview(event, 'profImg');">
+                    
+                                                </div>
+                                              </div>
+                            
+                                        </div>
+                                    </div>
+                                 
+                                  <div class="field btn">
+                                    <div class="btn-layer"></div>
+                                    <input type="submit" value="Add+">
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+
+
+
+                    <div tabindex="0" role="tabpanel" aria-labelledby="handles" id="handles-tab" hidden>
+                        <div class="formwrapper">
+                            <div class="title-text">
+                              <div class="title login"><div class="form-logo"></div></div>
+                            </div>
+                            <div class="form-container">
+                             
+                              <div class="form-inner">
+                            
+                                <form action="javascript:void(0);" class="signup" id="handlesform" autocomplete="off"
+                                enctype="multipart/form-data">
+                                    <div class="fields-con">
+                                       
+                                          <div class="field fh">
+                                            <div class="form-group">
+                                                <label for="fbname-update" class="label"
+                                                  ><i class="zmdi zmdi-facebook-box material-icons-name"></i
+                                                ></label>
+                                                <input
+                                                  type="text"
+                                                  name="fbname-update"
+                                                  id="fbname-update"
+                                                  placeholder="Facebook Handle's Name"
+                                                  class="forminput"
+                                                  required
+                                                />
+                                              </div>
+                                          </div>
+                                          <div class="field fh">
+                                            <div class="form-group">
+                                                <label for="fblink-update" class="label"
+                                                  ><i class="zmdi zmdi-facebook-box material-icons-name"></i
+                                                ></label>
+                                                <input
+                                                  type="text"
+                                                  name="fblink-update"
+                                                  id="fblink-update"
+                                                  placeholder="Facebook Handle's Link"
+                                                  class="forminput"
+                                                  required
+                                                />
+                                              </div>
+                                          </div>
+
+                                          <div class="field fh">
+                                            <div class="form-group">
+                                                <label for="igname-update" class="label"
+                                                  ><i class="zmdi zmdi-instagram material-icons-name"></i
+                                                ></label>
+                                                <input
+                                                  type="text"
+                                                  name="igname-update"
+                                                  id="igname-update"
+                                                  placeholder="Instagram Handle's Name"
+                                                  class="forminput"
+                                                  required
+                                                />
+                                              </div>
+                                          </div>
+                                          <div class="field fh">
+                                            <div class="form-group">
+                                                <label for="iglink-update" class="label"
+                                                  ><i class="zmdi zmdi-instagram material-icons-name"></i
+                                                ></label>
+                                                <input
+                                                  type="text"
+                                                  name="iglink-update"
+                                                  id="iglink-update"
+                                                  placeholder="Instagram Handle's Link"
+                                                  class="forminput"
+                                                  required
+                                                />
+                                              </div>
+                                          </div>
+
+                                          <div class="field fh">
+                                            <div class="form-group">
+                                                <label for="ytname-update" class="label"
+                                                  ><i class="zmdi zmdi-youtube material-icons-name"></i
+                                                ></label>
+                                                <input
+                                                  type="text"
+                                                  name="ytname-update"
+                                                  id="ytname-update"
+                                                  placeholder="Youtube Handle's Name"
+                                                  class="forminput"
+                                                  required
+                                                />
+                                              </div>
+                                          </div>
+                                          <div class="field fh">
+                                            <div class="form-group">
+                                                <label for="ytlink-update" class="label"
+                                                  ><i class="zmdi zmdi-youtube material-icons-name"></i
+                                                ></label>
+                                                <input
+                                                  type="text"
+                                                  name="ytlink-update"
+                                                  id="ytlink-update"
+                                                  placeholder="Youtube Handle's Link"
+                                                  class="forminput"
+                                                  required
+                                                />
+                                              </div>
+                                          </div>
+
+
+                                          <div class="field fh">
+                                            <div class="form-group">
+                                                <label for="whatsapp-update" class="label"
+                                                  ><i class="zmdi zmdi-whatsapp material-icons-name"></i
+                                                ></label>
+                                                <input
+                                                  type="text"
+                                                  name="whatsapp-update"
+                                                  id="whatsapp-update"
+                                                  placeholder="Whatsapp Line (23354...) format"
+                                                  class="forminput"
+                                                  oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                                                  required
+                                                />
+                                              </div>
+                                          </div>
+                                          <div class="field fh">
+                                            <div class="form-group">
+                                                <label for="email-update" class="label"
+                                                  ><i class="zmdi zmdi-email material-icons-name"></i
+                                                ></label>
+                                                <input
+                                                  type="text"
+                                                  name="email-update"
+                                                  id="email-update"
+                                                  placeholder="Email Address"
+                                                  class="forminput"
+                                                  required
+                                                />
+                                              </div>
+                                          </div>
+                                          <div class="field fh">
+                                            <div class="form-group">
+                                                <label for="phone-update" class="label"
+                                                  ><i class="zmdi zmdi-smartphone-iphone material-icons-name"></i
+                                                ></label>
+                                                <input
+                                                  type="text"
+                                                  name="phone-update"
+                                                  id="phone-update"
+                                                  placeholder="Contact Number"
+                                                  class="forminput"
+                                                  required
+                                                  oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                                                />
+                                              </div>
+                                          </div>
+
+
+                                     
+                                    </div>
+                                 
+                                  <div class="field btn">
+                                    <div class="btn-layer"></div>
+                                    <input type="submit" value="Update">
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div tabindex="0" role="tabpanel" aria-labelledby="bio" id="bio-tab" hidden>
+                        <div class="formwrapper" style="height: 339.5px !important;">
+                            <div class="title-text">
+                              <div class="title login"><div class="form-logo"></div></div>
+                            </div>
+                            <div class="form-container">
+                             
+                              <div class="form-inner">
+                            
+                                <form action="javascript:void(0);" class="signup" id="bioupdateform" autocomplete="off"
+                                enctype="multipart/form-data">
+                                        <div class="field fieldmargin" style="height: 110px !important;">
+                                            <textarea placeholder="Short description of yourself" id="txt-bio-update" required name="txt-bio-update" class="txtarea txtarea-extra"></textarea>
+                                          
+                                          </div>
+                                         
+                                   
+                                 
+                                  <div class="field btn">
+                                    <div class="btn-layer"></div>
+                                    <input type="submit" value="Update">
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                 
+                    <div tabindex="0" role="tabpanel" aria-labelledby="dp" id="dp-tab" hidden>
+                        <div class="formwrapper">
+                            <div class="title-text">
+                              <div class="title login"><div class="form-logo"></div></div>
+                            </div>
+                            <div class="form-container">
+                             
+                              <div class="form-inner">
+                            
+                                <form action="javascript:void(0);" class="signup" id="dpform" autocomplete="off"
+                                enctype="multipart/form-data">
+                                    <div class="fields-con">
+                                       
+                                        
+                                        <div class="form-group" align="center" style="margin-top: 20px;">
+                                            <div class="form-input" style="width: 100%;">
+                                              <div  >
+                                                <div class="newImg" id="bioImg" style="display: block; width: 310px !important;
+                                                height: 270px !important; margin-left: -4px;">
+                                                  <img id="file-dp-2-preview" src="" style="height:100%; width:100%; border-radius: 10px; ">
+                                                </div>
+                                              
+                    
+                                                </div>
+                                              </div>
+                            
+                                        </div>
+                                      
+                                         
+                                        
+                                        <div class="form-group" align="center" style="margin-top: 20px;">
+                                            <div class="form-input" style="width: 100%;">
+                                              <div  >
+                                                <div class="profimg" id="dpImg" style="display: none;">
+                                                  <img id="file-dp-1-preview" src="" style="height:100%; width:100%; border-radius: 10px; ">
+                                                </div>
+                                                <label for="file-dp-1">New Display Photo </label>
+                                                <input type="file" id="file-dp-1" accept="image/*" onchange="showPreview(event, 'dpImg');">
+                    
+                                                </div>
+                                              </div>
+                            
+                                        </div>
+                                    </div>
+                                 
+                                  <div class="field btn">
+                                    <div class="btn-layer"></div>
+                                    <input type="submit" value="Update">
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div tabindex="0" role="tabpanel" aria-labelledby="cv" id="cv-tab" hidden>
+                        <div class="formwrapper">
+                            <div class="title-text">
+                              <div class="title login"><div class="form-logo"></div></div>
+                            </div>
+                            <div class="form-container">
+                             
+                              <div class="form-inner">
+                            
+                                <form action="javascript:void(0);" class="signup" id="cvform" autocomplete="off"
+                                enctype="multipart/form-data">
+                                    <div class="fields-con">
+                                       
+                                        
+
+                                          <div class="form-group" align="center" style="margin-top: 20px;">
+                                            <div class="form-input" style="width: 340px;">
+                                              <div  >
+                                                <div  id="cvPreview-2" style="display: block;
+                                                width: 310px;
+                                                height: 270px;
+                                                border-radius: 10px;
+                                                margin-left: -20px;">
+                                               
+                                                  <iframe src=""  id="update-pdf-iframe" style="height:100%; width:100%; border-radius: 10px; "></iframe>
+                                                </div>
+                                              
+                    
+                                                </div>
+                                              </div>
+                            
+                                        </div>
+
+                                      
+                                        <div class="form-group" align="center" style="margin-top: 20px;">
+                                            <div class="form-input" style="width: 100%;">
+                                              <div  >
+                                                <div  id="cvPreview-1" style="display: none; width: 250px; height: 250px; border-radius: 10px;">
+                                               
+                                                  <iframe src=""  id="main-update-pdf-iframe" style="height:100%; width:100%; border-radius: 10px; "></iframe>
+                                                </div>
+                                                <label for="file-cv-1">New Curriculum Vitae </label>
+                                                <input type="file" id="file-cv-1" accept=".pdf" onchange="showFilePreview(event, 'main-update-pdf-iframe', 'cvPreview-1');">
+                    
+                                                </div>
+                                              </div>
+                            
+                                        </div>
+                                        
+                                      
+                                    </div>
+                                 
+                                  <div class="field btn">
+                                    <div class="btn-layer"></div>
+                                    <input type="submit" value="Update">
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+
+                  <div class="macaw-tabs macaw-elegant-tabs" id="mediaTab" style="display: none;">
+                    <div role="tablist" aria-label="Resources">
+                        <button role="tab" aria-selected="true" aria-controls="media-entry-tab" id="media-entry"><i class="fab fa-wpforms"></i> <span class="label">New</span></button>
+
+                        <button role="tab" aria-selected="false" aria-controls="pencil-works-tab" id="pencil-works" tabindex="-1"> <i class="fas fa-pencil-alt"></i> <span class="label">Pencil</span></button>
+
+                        <button role="tab" aria-selected="false" aria-controls="photoshop-tab" id="photoshop" tabindex="-1"> <i class="fas fa-camera-retro"></i> <span class="label">Photoshop</span></button>
+
+                        <button role="tab" aria-selected="false" aria-controls="ae-tab" id="afterEffects" tabindex="-1"> <i class="fas fa-cloud-sun"></i> <span class="label">AfterEffects</span></button>
+
+                        <button role="tab" aria-selected="false" aria-controls="threedee-tab" id="threedee" tabindex="-1"> <i class="fas fa-cubes"></i> <span class="label">3D</span></button>
+
+                        <button role="tab" aria-selected="false" aria-controls="vids-tab" id="ov" tabindex="-1"> <i class="fas fa-file-video"></i> <span class="label">Other Videos</span></button>
+                      </div> 
+
+                      <div tabindex="0" role="tabpanel" aria-labelledby="media-entry" id="media-entry-tab" >
+                        <div class="formwrapper">
+                            <div class="title-text">
+                              <div class="title login"><div class="form-logo"></div></div>
+                            </div>
+                            <div class="form-container" style="width: 300px !important;">
+                             
+                              <div class="form-inner">
+                            
+                                <form action="javascript:void(0);" class="signup" id="mediaform" autocomplete="off"
+                                enctype="multipart/form-data">
+                                    <div class="fields-con">
+                                       
+                                        <div class="field fh">
+                                            <div class="form-group">
+                                                <label for="media-label-main" class="label"
+                                                ><i class="zmdi zmdi-label-alt material-icons-name"></i
+                                              ></label>
+                                              <select
+                                                name="media-label-main"
+                                                class="forminput"
+                                                required
+                                                id="media-label-main"
+                                              >
+                                                <option value="">Type of Work</option>
+                                                <option value="ae">AfterEffects Works</option>
+                                                <option value="ps">Photoshop Works</option>
+                                                <option value="pencil">Pencil Works</option>
+                                                <option value="generalvideos">Other Videos</option>
+                                                <option value="threed">3D Works</option>
+                                              </select>
+                                              </div>
+                                          </div>  
+
+                                        <div class="field fh media-hidden" id="media-name-main-div">
+                                            <div class="form-group">
+                                                <label for="media-name-main" class="label"
+                                                  ><i class="zmdi zmdi-album material-icons-name"></i
+                                                ></label>
+                                                <input
+                                                  type="text"
+                                                  name="media-name-main"
+                                                  id="media-name-main"
+                                                  placeholder="Title of work"
+                                                  class="forminput"
+                                                  required
+                                                />
+                                              </div>
+                                          </div>     
+
+                                          <div class="field fh media-hidden" id="media-link-main-div">
+                                            <div class="form-group">
+                                                <label for="media-link-main" class="label"
+                                                  ><i class="zmdi zmdi-link material-icons-name"></i
+                                                ></label>
+                                                <input
+                                                  type="text"
+                                                  name="media-link-main"
+                                                  id="media-link-main"
+                                                  placeholder="Link to work"
+                                                  class="forminput"
+                                                  required
+                                                />
+                                              </div>
+                                          </div> 
+                                         
+                                        
+                                        <div class="form-group media-hidden" align="center" style="margin-top: 20px;" id="mediaImgMain-div">
+                                            <div class="form-input" style="width: 100%;">
+                                              <div  >
+                                                <div class="profimg" id="mediaImgMain" style="display: none;">
+                                                  <img id="file-ip-media-preview" src="" style="height:100%; width:100%; border-radius: 10px; ">
+                                                </div>
+                                                <label for="file-ip-media">Media File </label>
+                                                <input type="file" id="file-ip-media" accept="image/*" onchange="showPreview(event, 'mediaImgMain');">
+                    
+                                                </div>
+                                              </div>
+                            
+                                        </div>
+
+                                        <div class="field fieldmargin media-hidden" id="txt-media-main-div">
+                                            <textarea placeholder="Description of work" id="txt-media-main" required name="txt-media-main" class="txtarea"></textarea>
+                                          
+                                          </div>
+                                    </div>
+                                 
+                                  <div class="field btn">
+                                    <div class="btn-layer"></div>
+                                    <input type="submit" value="Add+">
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        
+
+
+                      </div>
+
+
+
+                      <div tabindex="0" role="tabpanel" aria-labelledby="pencil-works" id="pencil-works-tab" hidden style="display: flex; flex-direction: column; gap: 5px;">
+                      
+                       
+                      </div>
+
+
+                      <div tabindex="0" role="tabpanel" aria-labelledby="photoshop" id="photoshop-tab" hidden style="display: flex; flex-direction: column; gap: 5px;"></div>
+
+
+                      <div tabindex="0" role="tabpanel" aria-labelledby="afterEffects" id="ae-tab" hidden style="display: flex; flex-direction: column; gap: 5px;"></div>
+
+
+                      <div tabindex="0" role="tabpanel" aria-labelledby="threedee" id="threedee-tab" hidden style="display: flex; flex-direction: column; gap: 5px;"></div>
+
+
+                      <div tabindex="0" role="tabpanel" aria-labelledby="ov" id="vids-tab" hidden style="display: flex; flex-direction: column; gap: 5px;"></div>
+
+                 <div class="modalDialog" id="pictureBox" style="display: none;">
+                    <div class="close" id="picBoxClose">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <svg viewBox="0 0 36 36" class="circle">
+                          <path
+                            stroke-dasharray="100, 100"
+                            d="M18 2.0845
+                              a 15.9155 15.9155 0 0 1 0 31.831
+                              a 15.9155 15.9155 0 0 1 0 -31.831"
+                          />
+                        </svg>
+                      </div>
+                      <div class="mediaContentBox">
+                        <div class="fullimage">
+                            <img src="" id="picView" style="width: 100%; height: 100%;"/>
+                          </div>
+                      </div>
+                     
+                     
+
+                 </div>
+                 <div class="modalDialog" id="pictureCommentBox" style="display: none;">
+                    <div class="close" id="picCommentBoxClose">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <svg viewBox="0 0 36 36" class="circle">
+                          <path
+                            stroke-dasharray="100, 100"
+                            d="M18 2.0845
+                              a 15.9155 15.9155 0 0 1 0 31.831
+                              a 15.9155 15.9155 0 0 1 0 -31.831"
+                          />
+                        </svg>
+                      </div>
+
+                      <div class="mediaContentBox">
+                        <div class="fullimage">
+                            <img src="" id="picComView" style="width: 100%; height: 100%;"/>
+                          </div>
+                          <textarea class="fullviewtxtPic" id="picComViewTxt"></textarea>
+                          <input type="button" id="picComBtn" class="btnMedia" value="Update"/>
+                      </div>
+
+                 </div>
+                 <div class="modalDialog" id="videoBox" style="display: none;">
+                    <div class="close" id="vidBoxClose">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <svg viewBox="0 0 36 36" class="circle">
+                          <path
+                            stroke-dasharray="100, 100"
+                            d="M18 2.0845
+                              a 15.9155 15.9155 0 0 1 0 31.831
+                              a 15.9155 15.9155 0 0 1 0 -31.831"
+                          />
+                        </svg>
+                      </div>
+                      <div class="mediaContentBox">
+                        <div class="fullimagetwo">
+                           <!-- <video
+                                id="full-player"
+                                class="video-js"
+                                controls
+                                preload="auto"
+                                muted = "true"
+                                poster=""
+                                data-setup='{"techOrder": ["html5","youtube"]}' style="width: 100%; height: 290px;">
+                            <source src="images/logo revealing.mp4" type="video/mp4"></source>
+                            <p class="vjs-no-js">
+                                To view this video please enable JavaScript, and consider upgrading to a
+                                web browser that
+                                <a href="https://videojs.com/html5-video-support/" target="_blank">
+                                supports HTML5 video
+                                </a>
+                            </p>
+                            </video>-->
+                            <iframe id="full-player-video-iframe"  class="videoiframe" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  src="" style="width: 100%; height: 295px; margin-top: 30px;"></iframe>
+                          </div>
+                      </div>
+
+                 </div>
+               
+                </div>
+
+                  <div id="users-cards" class="card-two" style="display: none;">
+        
+                  </div>
+                 
+            </div>    
+
+
+            </main>
+</div>
+
+    </div>
+
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script  src="js/db.js"></script>  
+    <script  src="js/moment.min.js"></script>   
+    <script  src="js/axios.min.js"></script> 
+    <script src="js/emoji-browser.js"></script>
+    <script src="js/snackbar.min.js" ></script>
+    <script src="js/snackbar.js" ></script>
+    <script src="js/spin.min.js" ></script>
+    <script src="js/app.js"></script>
+    <script src="js/video.min.js"></script>
+    <script src="js/Youtube.min.js"></script>
+    <script src="js/youtube.com_iframe_api"></script>
+    <script src="js/macaw-tabs.js"></script>
+    <script src="js/dashboard.js"></script>
+    
+</body>
+</html>
